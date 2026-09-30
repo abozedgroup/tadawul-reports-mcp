@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tadawul-reports": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "TADAWUL_DB_PATH": "data/tadawul.db"
+      }
+    }
+  }
+}

@@ -20,8 +20,12 @@ npm run seed          # يضيف قائمة أولية من الشركات ال�
 
 ### Claude Code
 
+المستودع يحتوي على ملف `.mcp.json` يعرّف الخادم على مستوى المشروع، فيكفي تشغيل `claude` من داخل مجلد المشروع بعد البناء والتهيئة، والموافقة على الخادم عند أول طلب. تأكد بـ `/mcp` أن `tadawul-reports` متصل.
+
+لربطه من أي مجلد آخر (نطاق المستخدم):
+
 ```bash
-claude mcp add tadawul-reports -e TADAWUL_DB_PATH=/المسار/الكامل/data/tadawul.db -- node /المسار/الكامل/dist/index.js
+claude mcp add --scope user tadawul-reports -e TADAWUL_DB_PATH=/المسار/الكامل/data/tadawul.db -- node /المسار/الكامل/dist/index.js
 ```
 
 ### Claude Desktop
