@@ -3,9 +3,12 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import { METRICS, METRIC_KEYS, PERIODS, Store, defaultDbPath, openDb, readOnlyQuery } from "./db.js";
+import { loadBundledData } from "./data.js";
 
 const dbPath = defaultDbPath();
 const store = new Store(openDb(dbPath));
+// A fresh database starts with the companies and reports shipped in data/.
+if (store.searchCompanies().length === 0) loadBundledData(store);
 
 const server = new McpServer({ name: "tadawul-reports", version: "0.1.0" });
 

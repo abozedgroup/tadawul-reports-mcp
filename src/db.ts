@@ -1,6 +1,7 @@
 import { DatabaseSync } from "node:sqlite";
 import { mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 export const PERIODS = ["Q1", "Q2", "Q3", "Q4", "H1", "9M", "FY"] as const;
 export type Period = (typeof PERIODS)[number];
@@ -58,7 +59,8 @@ CREATE INDEX IF NOT EXISTS reports_by_year ON reports (fiscal_year, period);
 `;
 
 export function defaultDbPath(): string {
-  return resolve(process.env.TADAWUL_DB_PATH ?? "data/tadawul.db");
+  const bundled = fileURLToPath(new URL("../data/tadawul.db", import.meta.url));
+  return resolve(process.env.TADAWUL_DB_PATH ?? bundled);
 }
 
 export function openDb(path = defaultDbPath()): DatabaseSync {

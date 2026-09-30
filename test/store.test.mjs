@@ -65,3 +65,13 @@ test("query_sql only allows a single SELECT", () => {
   assert.throws(() => readOnlyQuery(path, "DELETE FROM companies"));
   assert.throws(() => readOnlyQuery(path, "SELECT 1; DELETE FROM companies"));
 });
+
+test("bundled data loads and every report cites a source", async () => {
+  const { loadBundledData } = await import("../dist/data.js");
+  const path = join(mkdtempSync(join(tmpdir(), "tadawul-")), "t.db");
+  const store = new Store(openDb(path));
+  const n = loadBundledData(store);
+  assert.ok(n.reports > 0);
+  const missing = readOnlyQuery(path, "SELECT symbol FROM reports WHERE source_url IS NULL OR source_url = ''");
+  assert.deepEqual(missing, []);
+});

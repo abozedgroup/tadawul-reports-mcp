@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "start": "node dist/index.js",
     "seed": "node dist/cli.js seed",
+    "load": "node dist/cli.js load",
     "import": "node dist/cli.js import",
     "test": "npm run build && node --test test/*.test.mjs"
   },
