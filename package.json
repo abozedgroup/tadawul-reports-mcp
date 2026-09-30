@@ -1,0 +1,29 @@
+{
+  "name": "tadawul-reports-mcp",
+  "version": "0.1.0",
+  "description": "MCP server with a SQLite database of financial reports for companies listed on the Saudi Exchange (Tadawul)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "node dist/cli.js seed",
+    "import": "node dist/cli.js import",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^7.0.2"
+  },
+  "type": "module",
+  "bin": {
+    "tadawul-reports-mcp": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

@@ -1,0 +1,19 @@
+[
+  { "symbol": "1010", "name_ar": "بنك الرياض", "name_en": "Riyad Bank", "sector": "البنوك" },
+  { "symbol": "1060", "name_ar": "البنك السعودي الأول", "name_en": "Saudi Awwal Bank", "sector": "البنوك" },
+  { "symbol": "1111", "name_ar": "مجموعة تداول السعودية", "name_en": "Saudi Tadawul Group", "sector": "الخدمات المالية" },
+  { "symbol": "1120", "name_ar": "مصرف الراجحي", "name_en": "Al Rajhi Bank", "sector": "البنوك" },
+  { "symbol": "1150", "name_ar": "مصرف الإنماء", "name_en": "Alinma Bank", "sector": "البنوك" },
+  { "symbol": "1180", "name_ar": "البنك الأهلي السعودي", "name_en": "Saudi National Bank", "sector": "البنوك" },
+  { "symbol": "1211", "name_ar": "معادن", "name_en": "Saudi Arabian Mining Co. (Ma'aden)", "sector": "المواد الأساسية" },
+  { "symbol": "2010", "name_ar": "سابك", "name_en": "SABIC", "sector": "المواد الأساسية" },
+  { "symbol": "2020", "name_ar": "سابك للمغذيات الزراعية", "name_en": "SABIC Agri-Nutrients", "sector": "المواد الأساسية" },
+  { "symbol": "2082", "name_ar": "أكوا", "name_en": "ACWA Power", "sector": "المرافق العامة" },
+  { "symbol": "2222", "name_ar": "أرامكو السعودية", "name_en": "Saudi Aramco", "sector": "الطاقة" },
+  { "symbol": "2280", "name_ar": "المراعي", "name_en": "Almarai", "sector": "إنتاج الأغذية" },
+  { "symbol": "4013", "name_ar": "سليمان الحبيب", "name_en": "Dr. Sulaiman Al Habib Medical Services", "sector": "الرعاية الصحية" },
+  { "symbol": "4190", "name_ar": "جرير", "name_en": "Jarir Marketing", "sector": "تجزئة وتوزيع السلع الكمالية" },
+  { "symbol": "5110", "name_ar": "السعودية للكهرباء", "name_en": "Saudi Electricity", "sector": "المرافق العامة" },
+  { "symbol": "7010", "name_ar": "الاتصالات السعودية", "name_en": "stc", "sector": "الاتصالات" },
+  { "symbol": "7020", "name_ar": "موبايلي", "name_en": "Etihad Etisalat (Mobily)", "sector": "الاتصالات" }
+]

@@ -1,0 +1,30 @@
+{
+  "_comment": "مثال على صيغة الاستيراد. الأرقام هنا وهمية للتوضيح فقط، استبدلها بأرقام القوائم المالية المنشورة.",
+  "companies": [
+    { "symbol": "9999", "name_ar": "شركة مثال", "name_en": "Example Co.", "sector": "مثال" }
+  ],
+  "reports": [
+    {
+      "symbol": "9999",
+      "fiscal_year": 2025,
+      "period": "FY",
+      "published_at": "2026-03-01",
+      "unit": "million",
+      "audited": true,
+      "source_url": "https://www.saudiexchange.sa/",
+      "metrics": {
+        "revenue": 1000,
+        "gross_profit": 400,
+        "operating_profit": 250,
+        "net_income": 200,
+        "eps": 2.0,
+        "total_assets": 5000,
+        "total_liabilities": 3000,
+        "total_equity": 2000,
+        "operating_cash_flow": 300,
+        "capex": 120,
+        "dividends_per_share": 1.0
+      }
+    }
+  ]
+}
